@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://govindsolarsolutions.com/</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://govindsolarsolutions.com/images/logo.png</image:loc>
+      <image:title>Govind Solar Solutions Logo</image:title>
+      <image:caption>Best Solar Panel Dealer and Installer in Bulandshahr</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://govindsolarsolutions.com/images/shop.jpg</image:loc>
+      <image:title>Govind Solar Solutions Showroom</image:title>
+      <image:caption>Authorized Solar Dealer Shop in Exhibition Marg Bulandshahr</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://govindsolarsolutions.com/images/brands.png</image:loc>
+      <image:title>Authorized Solar Brands Waaree Livguard Adani Havells Luminous</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://govindsolarsolutions.com/images/livguard-battery.png</image:loc>
+      <image:title>Livguard Solar Inverter and Battery Bulandshahr</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://govindsolarsolutions.com/images/luminous-battery.png</image:loc>
+      <image:title>Luminous Solar Tall Tubular Battery Bulandshahr</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://govindsolarsolutions.com/images/exide-battery.jpg</image:loc>
+      <image:title>Exide Solar Inva Tubular Battery Bulandshahr</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://govindsolarsolutions.com/images/eastman-battery.jpg</image:loc>
+      <image:title>Eastman Solar Battery Bulandshahr</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://govindsolarsolutions.com/images/waaree-inverter.png</image:loc>
+      <image:title>Waaree Solar Inverter Bulandshahr</image:title>
+    </image:image>
+  </url>
+</urlset>
