@@ -13,7 +13,7 @@ function initMobileNav() {
   const navToggle = document.getElementById('navToggle');
   const mainNav = document.getElementById('mainNav');
   const navOverlay = document.getElementById('navOverlay');
-  const navLinks = document.querySelectorAll('.nav-item');
+  const navLinks = document.querySelectorAll('.nav-item, .drawer-actions a');
 
   if (!navToggle || !mainNav || !navOverlay) return;
 

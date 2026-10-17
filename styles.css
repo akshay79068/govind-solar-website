@@ -10,6 +10,8 @@
   --accent-dark: #d35400;
   --green: #25D366;
   --green-hover: #1fb855;
+  --instagram: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  --instagram-hover: linear-gradient(45deg, #e08323 0%, #d5572b 25%, #cb1632 50%, #bb1255 75%, #ab0777 100%);
   --text-dark: #1e293b;
   --text-muted: #64748b;
   --bg-light: #f8fafc;
@@ -144,6 +146,19 @@ a {
   box-shadow: 0 8px 24px rgba(10, 61, 98, 0.35);
 }
 
+.btn-instagram {
+  background: var(--instagram);
+  color: #fff !important;
+  box-shadow: 0 4px 18px rgba(220, 39, 67, 0.35);
+}
+
+.btn-instagram:hover {
+  background: var(--instagram-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(220, 39, 67, 0.5);
+  color: #fff !important;
+}
+
 .btn-block {
   width: 100%;
 }
@@ -182,9 +197,34 @@ a {
 }
 
 .announcement-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
   font-size: 0.82rem;
   color: #e2e8f0;
   white-space: nowrap;
+}
+
+.announcement-sep {
+  opacity: 0.4;
+}
+
+.top-ig-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.14);
+  padding: 3px 10px;
+  border-radius: var(--radius-full);
+  font-weight: 600;
+  font-size: 0.78rem;
+  transition: all 0.2s ease;
+}
+
+.top-ig-link:hover {
+  background: rgba(255, 255, 255, 0.28);
+  color: #ffffff;
 }
 
 /* ==========================================================================
@@ -318,6 +358,28 @@ a {
 .btn-wa-header:hover {
   background: var(--green-hover);
   transform: translateY(-1px);
+}
+
+.btn-ig-header {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--instagram);
+  color: #fff !important;
+  font-size: 0.88rem;
+  font-weight: 700;
+  padding: 8px 16px;
+  border-radius: var(--radius-full);
+  box-shadow: 0 4px 14px rgba(220, 39, 67, 0.3);
+  transition: all 0.25s ease;
+  white-space: nowrap;
+}
+
+.btn-ig-header:hover {
+  background: var(--instagram-hover);
+  transform: translateY(-1px);
+  box-shadow: 0 6px 18px rgba(220, 39, 67, 0.45);
+  color: #fff !important;
 }
 
 .nav-toggle {
@@ -1087,9 +1149,41 @@ a {
   background: var(--green-hover);
 }
 
+.ig-text-link {
+  color: #dc2743;
+  font-weight: 700;
+  transition: color 0.2s ease;
+}
+
+.ig-text-link:hover {
+  color: #bc1888;
+  text-decoration: underline;
+}
+
+.drawer-actions {
+  width: 100%;
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
 /* ==========================================================================
    RESPONSIVE DESIGN (TABLETS & SMARTPHONES)
    ========================================================================== */
+
+@media (max-width: 1120px) and (min-width: 769px) {
+  .main-nav {
+    gap: 14px;
+  }
+  .header-call-link, .btn-wa-header, .btn-ig-header {
+    padding: 7px 12px;
+    font-size: 0.82rem;
+  }
+  .header-cta-group {
+    gap: 8px;
+  }
+}
 
 @media (max-width: 992px) {
   .hero-layout {
@@ -1198,6 +1292,26 @@ a {
 
   .header-call-link, .btn-wa-header {
     display: none;
+  }
+
+  .btn-ig-header {
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    flex-shrink: 0;
+  }
+
+  .btn-ig-header span {
+    display: none;
+  }
+
+  .btn-ig-header svg {
+    width: 20px;
+    height: 20px;
   }
 
   .nav-toggle {
