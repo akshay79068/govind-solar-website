@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initScrollSpy();
   initProductTabs();
   initBrandTabs();
+  initFaqAccordion();
 });
 
 // Mobile & Tablet Navigation Toggle
@@ -182,6 +183,38 @@ function initBrandTabs() {
         if (firstMatch) {
           firstMatch.scrollIntoView({ behavior: 'smooth', block: 'center' });
         }
+      }
+    });
+  });
+}
+
+// Interactive FAQ Accordion
+function initFaqAccordion() {
+  const faqItems = document.querySelectorAll('.faq-item');
+  if (!faqItems.length) return;
+
+  faqItems.forEach(item => {
+    const questionBtn = item.querySelector('.faq-question');
+    const toggleIcon = item.querySelector('.faq-toggle-icon');
+    if (!questionBtn) return;
+
+    questionBtn.addEventListener('click', () => {
+      const isActive = item.classList.contains('active');
+
+      // Close all other items
+      faqItems.forEach(otherItem => {
+        otherItem.classList.remove('active');
+        const otherBtn = otherItem.querySelector('.faq-question');
+        const otherIcon = otherItem.querySelector('.faq-toggle-icon');
+        if (otherBtn) otherBtn.setAttribute('aria-expanded', 'false');
+        if (otherIcon) otherIcon.textContent = '+';
+      });
+
+      // If clicked item wasn't open, open it
+      if (!isActive) {
+        item.classList.add('active');
+        questionBtn.setAttribute('aria-expanded', 'true');
+        if (toggleIcon) toggleIcon.textContent = '−';
       }
     });
   });

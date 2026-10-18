@@ -3,22 +3,27 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://govindsolarsolutions.com/</loc>
-    <lastmod>2026-10-16</lastmod>
-    <changefreq>weekly</changefreq>
+    <lastmod>2026-10-18</lastmod>
+    <changefreq>daily</changefreq>
     <priority>1.0</priority>
     <image:image>
       <image:loc>https://govindsolarsolutions.com/images/logo.png</image:loc>
       <image:title>Govind Solar Solutions Logo</image:title>
-      <image:caption>Best Solar Panel Dealer and Installer in Bulandshahr</image:caption>
+      <image:caption>Best Solar Panel Dealer and Rooftop Installer in Bulandshahr</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://govindsolarsolutions.com/images/poster.png</image:loc>
+      <image:title>Govind Solar Solutions Rooftop Solar Installation</image:title>
+      <image:caption>PM Surya Ghar Muft Bijli Yojana Subsidy Bulandshahr</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://govindsolarsolutions.com/images/shop.jpg</image:loc>
-      <image:title>Govind Solar Solutions Showroom</image:title>
-      <image:caption>Authorized Solar Dealer Shop in Exhibition Marg Bulandshahr</image:caption>
+      <image:title>Govind Solar Solutions Showroom Bulandshahr</image:title>
+      <image:caption>Authorized Solar Dealer Showroom Exhibition Marg Devpuri Bulandshahr</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://govindsolarsolutions.com/images/brands.png</image:loc>
-      <image:title>Authorized Solar Brands Waaree Livguard Adani Havells Luminous</image:title>
+      <image:title>Authorized Solar Brands Waaree Livguard Adani Havells Eastman Luminous</image:title>
     </image:image>
     <image:image>
       <image:loc>https://govindsolarsolutions.com/images/livguard-battery.png</image:loc>
