@@ -6,13 +6,16 @@ document.addEventListener('DOMContentLoaded', () => {
   initMobileNav();
   initHeaderScroll();
   initScrollSpy();
+  initProductTabs();
+  initBrandTabs();
 });
 
-// Mobile Navigation Toggle
+// Mobile & Tablet Navigation Toggle
 function initMobileNav() {
   const navToggle = document.getElementById('navToggle');
   const mainNav = document.getElementById('mainNav');
   const navOverlay = document.getElementById('navOverlay');
+  const drawerClose = document.getElementById('drawerClose');
   const navLinks = document.querySelectorAll('.nav-item, .drawer-actions a');
 
   if (!navToggle || !mainNav || !navOverlay) return;
@@ -35,6 +38,10 @@ function initMobileNav() {
     const isOpen = mainNav.classList.contains('open');
     setMenu(!isOpen);
   });
+
+  if (drawerClose) {
+    drawerClose.addEventListener('click', () => setMenu(false));
+  }
 
   navOverlay.addEventListener('click', () => setMenu(false));
 
@@ -83,12 +90,101 @@ function initScrollSpy() {
     });
 
     navItems.forEach(item => {
-      item.classList.remove('active');
-      if (item.getAttribute('href') === '#' + current) {
-        item.classList.add('active');
-      }
+      const isCurrent = item.getAttribute('href') === '#' + current;
+      item.classList.toggle('active', isCurrent);
+      item.setAttribute('aria-selected', isCurrent ? 'true' : 'false');
     });
   }, { passive: true });
+}
+
+// Interactive Product Category Filter Tabs
+function initProductTabs() {
+  const tabs = document.querySelectorAll('.product-tab');
+  const cards = document.querySelectorAll('.product-card');
+  if (!tabs.length || !cards.length) return;
+
+  tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      const filter = tab.getAttribute('data-filter');
+
+      tabs.forEach(t => {
+        t.classList.remove('active');
+        t.setAttribute('aria-selected', 'false');
+      });
+      tab.classList.add('active');
+      tab.setAttribute('aria-selected', 'true');
+
+      cards.forEach(card => {
+        const categories = (card.getAttribute('data-category') || '').split(' ');
+        const matches = filter === 'all' || categories.includes(filter);
+
+        if (matches) {
+          card.classList.remove('is-hidden');
+          card.style.display = 'flex';
+          requestAnimationFrame(() => {
+            card.style.opacity = '1';
+            card.style.transform = 'translateY(0) scale(1)';
+          });
+        } else {
+          card.style.opacity = '0';
+          card.style.transform = 'translateY(10px) scale(0.98)';
+          card.classList.add('is-hidden');
+          setTimeout(() => {
+            if (card.classList.contains('is-hidden')) {
+              card.style.display = 'none';
+            }
+          }, 220);
+        }
+      });
+    });
+  });
+}
+
+// Interactive Brand Dealership Tabs
+function initBrandTabs() {
+  const brandTabs = document.querySelectorAll('.brand-tab');
+  const cards = document.querySelectorAll('.product-card');
+  if (!brandTabs.length) return;
+
+  brandTabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      const selectedBrand = tab.getAttribute('data-brand');
+
+      brandTabs.forEach(t => {
+        t.classList.remove('active');
+        t.setAttribute('aria-selected', 'false');
+      });
+      tab.classList.add('active');
+      tab.setAttribute('aria-selected', 'true');
+
+      if (selectedBrand === 'all') {
+        cards.forEach(card => {
+          card.classList.remove('brand-highlighted');
+        });
+      } else {
+        let firstMatch = null;
+        cards.forEach(card => {
+          const cardBrand = card.getAttribute('data-brand');
+          if (cardBrand === selectedBrand) {
+            card.classList.add('brand-highlighted');
+            if (!firstMatch) firstMatch = card;
+          } else {
+            card.classList.remove('brand-highlighted');
+          }
+        });
+
+        // Ensure "All Products" category tab is active so all cards are visible
+        const allTab = document.querySelector('.product-tab[data-filter="all"]');
+        if (allTab && !allTab.classList.contains('active')) {
+          allTab.click();
+        }
+
+        if (firstMatch) {
+          firstMatch.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+      }
+    });
+  });
 }
 
 // Contact Form Submit to WhatsApp
