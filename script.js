@@ -1,4 +1,4 @@
-/**
+﻿/**
  * Govind Solar Solutions - Clean & Lightweight JavaScript
  */
 
@@ -241,7 +241,7 @@ function submitToWhatsApp(e) {
   if (message) text += `📍 *Message/Area:* ${message}\n`;
   text += `\n🌐 Source: govindsolarsolutions.com`;
 
-  const waUrl = `https://wa.me/917055507707?text=${encodeURIComponent(text)}`;
+  const waUrl = `https://wa.me/917055507719?text=${encodeURIComponent(text)}`;
   window.open(waUrl, '_blank', 'noopener,noreferrer');
 
   form.reset();
