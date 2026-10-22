@@ -3,22 +3,27 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://govindsolarsolutions.com/</loc>
-    <lastmod>2026-10-16</lastmod>
-    <changefreq>weekly</changefreq>
+    <lastmod>2026-10-20</lastmod>
+    <changefreq>daily</changefreq>
     <priority>1.0</priority>
     <image:image>
       <image:loc>https://govindsolarsolutions.com/images/logo.png</image:loc>
       <image:title>Govind Solar Solutions Logo</image:title>
-      <image:caption>Best Solar Panel Dealer and Installer in Bulandshahr</image:caption>
+      <image:caption>Best Solar Panel Dealer and Rooftop Installer in Bulandshahr</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://govindsolarsolutions.com/images/poster.png</image:loc>
+      <image:title>Govind Solar Solutions Rooftop Solar Installation</image:title>
+      <image:caption>PM Surya Ghar Muft Bijli Yojana Subsidy Bulandshahr</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://govindsolarsolutions.com/images/shop.jpg</image:loc>
-      <image:title>Govind Solar Solutions Showroom</image:title>
-      <image:caption>Authorized Solar Dealer Shop in Exhibition Marg Bulandshahr</image:caption>
+      <image:title>Govind Solar Solutions Showroom Bulandshahr</image:title>
+      <image:caption>Authorized Solar Dealer Showroom Opp Muslim Inter College Market Raje Babu Road Bulandshahr</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://govindsolarsolutions.com/images/brands.png</image:loc>
-      <image:title>Authorized Solar Brands Waaree Livguard Adani Havells Luminous</image:title>
+      <image:title>Authorized Solar Brands Waaree Livguard Adani Havells Microtek Eastman Luminous</image:title>
     </image:image>
     <image:image>
       <image:loc>https://govindsolarsolutions.com/images/livguard-battery.png</image:loc>
@@ -39,6 +44,36 @@
     <image:image>
       <image:loc>https://govindsolarsolutions.com/images/waaree-inverter.png</image:loc>
       <image:title>Waaree Solar Inverter Bulandshahr</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://govindsolarsolutions.com/images/site-1.jpg</image:loc>
+      <image:title>Residential Rooftop Solar System Devpuri Bulandshahr</image:title>
+      <image:caption>5kW Rooftop Solar Installation Shanti Niketan Colony Devpuri Bulandshahr</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://govindsolarsolutions.com/images/site-2.jpg</image:loc>
+      <image:title>Elevated Pergola Rooftop Solar Structure Kailashpuri Bulandshahr</image:title>
+      <image:caption>6kW Elevated Rooftop Solar Structure Kailashpuri Bulandshahr</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://govindsolarsolutions.com/images/site-3.jpg</image:loc>
+      <image:title>Rooftop Solar Plant with RCC Footing Amba Enclave Khurja Marg Bulandshahr</image:title>
+      <image:caption>7kW Solar Array with Concrete Foundations Amba Enclave Bulandshahr</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://govindsolarsolutions.com/images/site-4.jpg</image:loc>
+      <image:title>Commercial Industrial Rooftop Solar Plant Bulandshahr</image:title>
+      <image:caption>50kW Industrial Factory Shed Solar Plant Bulandshahr</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://govindsolarsolutions.com/images/site-5.jpg</image:loc>
+      <image:title>Rooftop Solar Maintenance and Cleaning Girdhari Nagar Bulandshahr</image:title>
+      <image:caption>Elevated Solar Installation Girdhari Nagar Marg Bulandshahr</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://govindsolarsolutions.com/images/site-300-plus.jpg</image:loc>
+      <image:title>300 Plus Rooftop Solar Projects Milestone Bulandshahr</image:title>
+      <image:caption>300 Plus Solar Installations across Bulandshahr UP by Govind Solar Solutions</image:caption>
     </image:image>
   </url>
 </urlset>

@@ -1,0 +1,7 @@
+# Duplicate subfolder from extraction
+govind-solar-website/
+
+# OS metadata
+Thumbs.db
+ehthumbs.db
+.DS_Store
