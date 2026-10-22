@@ -266,20 +266,25 @@ a {
 .top-call-link {
   display: inline-flex;
   align-items: center;
-  gap: 5px;
+  gap: 6px;
   color: #ffffff;
-  background: rgba(255, 255, 255, 0.14);
-  padding: 3px 10px;
+  background: rgba(255, 255, 255, 0.18);
+  border: 1px solid rgba(255, 255, 255, 0.32);
+  padding: 4px 12px;
   border-radius: var(--radius-full);
   font-weight: 700;
-  font-size: 0.8rem;
-  transition: all 0.2s ease;
+  font-size: 0.82rem;
+  letter-spacing: 0.2px;
+  transition: all 0.22s ease;
   text-decoration: none;
 }
 
 .top-call-link:hover {
-  background: rgba(255, 255, 255, 0.28);
-  color: #ffffff;
+  background: #ffffff;
+  color: var(--primary) !important;
+  border-color: #ffffff;
+  transform: translateY(-1px);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.18);
 }
 
 /* ==========================================================================
@@ -402,34 +407,7 @@ a {
   display: none;
 }
 
-.header-cta-group {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
 
-.header-call-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 7px;
-  font-weight: 700;
-  font-size: 0.9rem;
-  color: #ffffff;
-  background: var(--primary);
-  padding: 8px 16px;
-  border-radius: var(--radius-full);
-  box-shadow: 0 4px 14px rgba(10, 61, 98, 0.22);
-  transition: all 0.25s ease;
-  white-space: nowrap;
-  text-decoration: none;
-}
-
-.header-call-btn:hover {
-  background: var(--primary-light);
-  transform: translateY(-1px);
-  box-shadow: 0 6px 18px rgba(10, 61, 98, 0.3);
-  color: #ffffff;
-}
 
 .nav-toggle {
   display: none;
@@ -2719,15 +2697,7 @@ a {
     color: #ffffff !important;
   }
 
-  /* Header CTAs on Tablet (769px - 1024px) */
-  .header-call-btn {
-    padding: 7px 14px;
-    font-size: 0.86rem;
-  }
 
-  .header-cta-group {
-    gap: 10px;
-  }
 
   /* Hero Section on Tablet */
   .hero-layout {
@@ -2910,15 +2880,7 @@ a {
     text-overflow: ellipsis;
   }
 
-  .header-cta-group {
-    gap: 8px;
-    flex-shrink: 0;
-  }
 
-  .header-call-btn {
-    padding: 6px 12px;
-    font-size: 0.82rem;
-  }
 
   .nav-toggle {
     width: 38px;
@@ -3226,17 +3188,7 @@ a {
     font-size: 0.64rem;
   }
 
-  .header-call-btn {
-    padding: 8px;
-    border-radius: 8px;
-    width: 36px;
-    height: 36px;
-    justify-content: center;
-  }
 
-  .header-call-btn span {
-    display: none;
-  }
 
   .hero-features-bar {
     gap: 6px;
