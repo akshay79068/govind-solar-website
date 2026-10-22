@@ -446,6 +446,16 @@ function initSiteLightbox() {
     if (e.key === 'ArrowLeft' && prevBtn) prevBtn.click();
     if (e.key === 'ArrowRight' && nextBtn) nextBtn.click();
   });
+
+  // Enable keyboard activation for gallery thumbnails
+  document.querySelectorAll('.collapse-mini-gallery img').forEach(thumb => {
+    thumb.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        thumb.click();
+      }
+    });
+  });
 }
 
 function renderLightboxContent() {

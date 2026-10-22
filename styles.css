@@ -123,33 +123,63 @@ a {
   border-radius: var(--radius-full);
   font-weight: 700;
   font-size: 0.96rem;
-  border: none;
+  border: 1px solid transparent;
   cursor: pointer;
-  transition: all 0.25s ease;
+  text-decoration: none;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  white-space: nowrap;
 }
 
-.btn-green {
+.btn-green,
+.btn-whatsapp {
   background: var(--green);
-  color: #fff;
+  color: #fff !important;
   box-shadow: 0 4px 18px rgba(37, 211, 102, 0.35);
 }
 
-.btn-green:hover {
+.btn-green:hover,
+.btn-whatsapp:hover {
   background: var(--green-hover);
   transform: translateY(-2px);
   box-shadow: 0 8px 24px rgba(37, 211, 102, 0.45);
+  color: #fff !important;
 }
 
-.btn-dark {
+.btn-dark,
+.btn-primary {
   background: var(--primary);
-  color: #fff;
+  color: #fff !important;
   box-shadow: 0 4px 18px rgba(10, 61, 98, 0.25);
 }
 
-.btn-dark:hover {
+.btn-dark:hover,
+.btn-primary:hover {
   background: var(--primary-dark);
   transform: translateY(-2px);
   box-shadow: 0 8px 24px rgba(10, 61, 98, 0.35);
+  color: #fff !important;
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--primary);
+  border-color: var(--primary);
+}
+
+.btn-outline:hover {
+  background: var(--primary);
+  color: #fff !important;
+  transform: translateY(-2px);
+}
+
+.btn-sm {
+  padding: 8px 18px;
+  font-size: 0.86rem;
+}
+
+.btn-lg {
+  padding: 15px 32px;
+  font-size: 1.05rem;
 }
 
 .btn-instagram {
@@ -229,6 +259,25 @@ a {
 }
 
 .top-ig-link:hover {
+  background: rgba(255, 255, 255, 0.28);
+  color: #ffffff;
+}
+
+.top-call-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.14);
+  padding: 3px 10px;
+  border-radius: var(--radius-full);
+  font-weight: 700;
+  font-size: 0.8rem;
+  transition: all 0.2s ease;
+  text-decoration: none;
+}
+
+.top-call-link:hover {
   background: rgba(255, 255, 255, 0.28);
   color: #ffffff;
 }
@@ -548,8 +597,16 @@ a {
   flex-shrink: 0;
 }
 
+.hero-image-col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
 .hero-card-img {
   max-width: 480px;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -912,6 +969,10 @@ a {
 .product-tab-icon {
   font-size: 1rem;
   line-height: 1;
+}
+
+.product-tab-title {
+  font-weight: inherit;
 }
 
 .product-tab-count {
